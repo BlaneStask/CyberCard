@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">CyberCard</string>
+    <string name="home">Home</string>
+    <string name="contact">Contact</string>
+    <string name="qr_code">QR Code</string>
+    <string name="Create">Create </string>
+    <string name="Contact">Contact</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="company">Company</string>
+    <string name="phone">Phone Number</string>
+    <string name="email">Email</string>
+    <string name="welcome">Welcome to Cyber</string>
+    <string name="card">Card</string>
+    <string name="para">CyberCard acts as a convenient way to give
+        out your contact information. Anywhere from business to
+        personal information, CyberCard helps to provide
+        users with their own QR code to be scanned in order to
+        generate a new contact with their provided information.</string>
+    <string name="features">Features</string>
+    <string name="para2">The main advanced feature is the generation
+        of the QR code from the provided information. After scanning the
+        QR code a new contact is opened on the device that scanned and
+        the information provided fills in the contact. </string>
+    <string name="QR">QR</string>
+    <string name="code">Code</string>
+    <string name="save">SAVE</string>
+    <string name="Qr_code">qr_code</string>
+    <string name="enter_your_info">Enter your Info</string>
+    <string name="generate">generate</string>
+    <string name="nothing"> </string>
+</resources>
