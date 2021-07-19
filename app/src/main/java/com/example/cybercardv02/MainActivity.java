@@ -41,9 +41,9 @@ public class MainActivity extends AppCompatActivity implements SaveDialog.Button
     int or = 0;   // orientation
     
     /**
-    * This method is used to add two integers. This is
-    * a the simplest form of a class method, just to
-    * show the usage of various javadoc Tags.
+    * This method is used to create the application and
+    * set up its layout with tabs, viewpager and 
+    * fragment adapter.
     *
     * @param savedInstanceState Used to set up onCreate
     */
