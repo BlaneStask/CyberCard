@@ -22,15 +22,31 @@ import com.google.android.material.tabs.TabLayout;
 import it.auron.library.mecard.MeCard;
 import net.glxn.qrgen.android.QRCode;
 
-
+/**
+* <h1>CyberCard</h1>
+* Convenient way to give out personal
+* contact information using a QR Code.
+* <p>
+*
+* @author  Blane Staskiewicz
+* @version 2.0
+* @since   2021-05-04
+*/
 public class MainActivity extends AppCompatActivity implements SaveDialog.ButtonClickListener {
     String first_name;
     String last_name;
     String company;
     String p_number;
     String email;
-    int or = 0;
-
+    int or = 0;   // orientation
+    
+    /**
+    * This method is used to add two integers. This is
+    * a the simplest form of a class method, just to
+    * show the usage of various javadoc Tags.
+    *
+    * @param savedInstanceState Used to set up onCreate
+    */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -84,7 +100,7 @@ public class MainActivity extends AppCompatActivity implements SaveDialog.Button
     }
 
     /**
-     *  initializes QR Code - uses ZXING/QRGen/QrCardParsing libraries
+     * initializes QR Code - uses ZXING/QRGen/QrCardParsing libraries
      */
     private void initQRCode() {
         EditText et1 = findViewById(R.id.editTextTextPersonName3);
@@ -169,7 +185,7 @@ public class MainActivity extends AppCompatActivity implements SaveDialog.Button
     }
 
     /**
-     * Reinitialize QR Code when oriented
+     * Reinitializes QR Code when oriented
      *
      * @param newConfig The new view configuration
      */
