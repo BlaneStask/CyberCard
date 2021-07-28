@@ -23,14 +23,14 @@ import it.auron.library.mecard.MeCard;
 import net.glxn.qrgen.android.QRCode;
 
 /**
-* <h1>CyberCard</h1>
-* Convenient way to give out personal
-* contact information using a QR Code.
-*
-* @author  Blane Staskiewicz
-* @version 2.0
-* @since   2021-05-04
-*/
+ * <h1>CyberCard</h1>
+ * Convenient way to give out personal
+ * contact information using a QR Code.
+ *
+ * @author  Blane Staskiewicz
+ * @version 2.0
+ * @since   2021-07-28
+ */
 public class MainActivity extends AppCompatActivity implements SaveDialog.ButtonClickListener {
     String first_name;
     String last_name;
@@ -40,12 +40,11 @@ public class MainActivity extends AppCompatActivity implements SaveDialog.Button
     int or = 0;   // orientation
     
     /**
-    * This method is used to create the application and
-    * set up its layout with tabs, viewpager and 
-    * fragment adapter.
-    *
-    * @param savedInstanceState  Used to set up onCreate
-    */
+     * This method is used to create the application and
+     * set up its layout with tabs, viewpager and fragment adapter.
+     *
+     * @param savedInstanceState  Used to set up onCreate
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -99,8 +98,8 @@ public class MainActivity extends AppCompatActivity implements SaveDialog.Button
     }
 
     /**
-    * initializes QR Code - uses ZXING/QRGen/QrCardParsing libraries
-    */
+     * initializes QR Code - uses ZXING/QRGen/QrCardParsing libraries
+     */
     private void initQRCode() {
         EditText et1 = findViewById(R.id.editTextTextPersonName3);
         EditText et2 = findViewById(R.id.editTextTextPersonName4);
@@ -132,13 +131,13 @@ public class MainActivity extends AppCompatActivity implements SaveDialog.Button
     }
 
     /**
-    * Saves QR Code, shows snackbars as indicators
-    * QR Code tab: on click SAVE button, SaveDialog callback
-    *
-    * @param val  value of callback from SaveDialog
-    *             true: save to photos, display saved snackbar
-    *             false: cancel, display not saved snackbar
-    */
+     * Saves QR Code, shows snackbars as indicators
+     * QR Code tab: on click SAVE button, SaveDialog callback
+     *
+     * @param val  value of callback from SaveDialog
+     *             true: save to photos, display saved snackbar
+     *             false: cancel, display not saved snackbar
+     */
     public void onButtonClick(boolean val) {
         View view = findViewById(R.id.viewpager);
         if (val) {
@@ -169,10 +168,10 @@ public class MainActivity extends AppCompatActivity implements SaveDialog.Button
     }
 
     /**
-    * persists input data, when oriented
-    *
-    * @param outState  bundle of states to save
-    */
+     * persists input data, when oriented
+     *
+     * @param outState  bundle of states to save
+     */
     @Override
     public void onSaveInstanceState(@NonNull Bundle outState){
         super.onSaveInstanceState(outState);
@@ -184,10 +183,10 @@ public class MainActivity extends AppCompatActivity implements SaveDialog.Button
     }
 
     /**
-    * Reinitializes QR Code when oriented
-    *
-    * @param newConfig  The new view configuration
-    */
+     * Reinitializes QR Code when oriented
+     *
+     * @param newConfig  new view configuration
+     */
     @Override
     public void onConfigurationChanged(@NonNull Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
