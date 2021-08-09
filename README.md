@@ -1,6 +1,8 @@
-<img align="right" width="140" height="140" src="CyberCard_icon.png">
+<p align="center">
+    <img width="160" height="160" src="CyberCard_icon.png">
+</p>
 
-## CyberCard
+<h1 align="center">CyberCard</h1>
 
 CyberCard acts as a convenient way to give out your contact information. Anywhere from business to personal contact information, the CyberCard helps to provide users with their own QR code to be scanned in order to generate a new contact with their provided information. The CyberCard application has a Home, Contact and QR Code page. The Home page provides users with a better understanding of the app. The Contact page allows users to provide information like: First Name, Last Name, Company, Phone Number and Email. Once the Contact information has been entered, the user can then save the QR code to their photos through the QR Code page. This allows clients and new friends to scan this QR code to gain their contact information with ease.
 
